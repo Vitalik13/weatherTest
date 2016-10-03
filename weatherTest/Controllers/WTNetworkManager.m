@@ -21,7 +21,7 @@ static NSString *WTCodPath = @"cod";
 static NSString *WTApiKey = @"00714f07efa71fce379d69af2773db31";
 static NSString *WTWeatherURL = @"http://api.openweathermap.org/data/2.5/weather";
 
-static NSString *WTCitiesURL = @"https://psv4.vk.me/c812527/u77188164/docs/79f8c83fde9f/DocumentsCitiesRU.json?extra=eMuhMdse7us06wT1Q9vaSs8Y4py_YZMfeYYWY6kWY9CxdlT3tsi8c1WhUJmYXFWNefE4DX9Om9IwYPwDdX3wXeirsSmAF1Y_yv97_lMjSUXS0ho09lIjf5M&dl=1";
+static NSString *WTCitiesURL = @"http://s05657b7d.fastvps-server.com/DocumentsCitiesRU.json";
 
 NSString *WTImageColdURL = @"http://hikingartist.files.wordpress.com/2012/05/1-christmas-tree.jpg";
 NSString *WTImageHotURL = @"http://www.webcity.su/images/img/summer-sun-sea-beach-4.jpg";
