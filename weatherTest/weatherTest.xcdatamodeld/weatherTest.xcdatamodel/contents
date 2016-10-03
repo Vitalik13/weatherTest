@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="City" representedClassName="WTCity" syncable="YES">
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiryDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="temp" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Weather" inverseName="cities" inverseEntity="Weather" syncable="YES"/>
+    </entity>
+    <entity name="Weather" representedClassName="WTWeather" syncable="YES">
+        <attribute name="detailedDescription" attributeType="String" syncable="YES"/>
+        <attribute name="main" attributeType="String" syncable="YES"/>
+        <attribute name="uid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="cities" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="City" inverseName="weather" inverseEntity="City" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="City" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="Weather" positionX="-45" positionY="45" width="128" height="105"/>
+    </elements>
+</model>
